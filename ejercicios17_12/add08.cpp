@@ -21,15 +21,20 @@
 #include <stdlib.h>
 
 double add(double op1, double op2){
-    return op1 += op2;
+    return op1 + op2;
 }
 int main(int argc, char *argv[]){
 
     double suma;
-    while(i < argc)
-	suma = add(atof(argv[i]),atof(argv[i]));
+    double resultado = 0;
+    int i = 1;
+    while(i < argc){
+	suma = resultado;
+	resultado = add(suma,atof(argv[i]));
+	i++;
+    }
 
-    printf("%lg\n", suma);
+    printf("%lg\n", resultado);
 
     return EXIT_SUCCESS;
 
