@@ -38,16 +38,27 @@ void rellenar(struct TJugador jugador[N]){
 	printf("Introduce el nombre del jugador %i", i+1);
 	gets(jugador[i].nombre);
 	printf("Introduce su fuerza");
-	scanf("%i", jugador[i].Habilidades.fuerza);
+	scanf("%i", &jugador[i].habilidad.fuerza);
 	printf("Introduce su resistencia");
-	scanf("%i", jugador[i].Habilidades.resistencia);
+	scanf("%i", &jugador[i].habilidad.resistencia);
 	printf("Introduce su velocidad");
-	scanf("%i", jugador[i].Habilidades.velocidad);
-	printf("Introduce su dinero");
-	scanf("%i", jugador[i].dinero);
-	printf("Introduce su puntos");
-	scanf("%i", jugador[i].puntos);
+	scanf("%i", &jugador[i].habilidad.velocidad);
+	jugador[i].dinero = 0;
+	jugador[i].puntos = 100;
     }
+}
+
+void actualizar(struct TJugador jugador[N]){
+    for(int i = 0; i < N; i++){
+	jugador[i].habilidad.fuerza +=3;
+	jugador[i].habilidad.resistencia += 1;
+	jugador[i].habilidad.velocidad += 2;
+	jugador[i].dinero += 1000;
+	jugador[i].puntos += 5000;
+    }
+}
+
+
 int main(int argc, char *argv[]){
 
     struct TJugador jugador[N];
@@ -60,10 +71,11 @@ int main(int argc, char *argv[]){
     else{
 	fread(jugador, sizeof(struct TJugador), N, hoja);
 	fclose(hoja);
+	actualizar(jugador);
     }
 
-	
-    }
+
+
 
     return EXIT_SUCCESS;
 
