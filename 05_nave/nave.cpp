@@ -72,7 +72,6 @@ Nave::move ()
     else if(this->x <= 3 and this->y <= 40*i)
     {
 	this->y++;
-	i++;
     }
     else if (this->x >= 1 and this->y <= 35*i)
     {
