@@ -66,6 +66,7 @@ int main(int argc, char *argv[]){
 
     if((hoja = fopen("hoja.bin", "wb")) == NULL){
 	rellenar(jugador);
+	fclose(hoja);
     }
 
     else{
