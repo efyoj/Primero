@@ -1,0 +1,153 @@
+body {
+	font-family: Arial, Helvetica, "Sans Serif";
+    background-image: url('../images/Fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+p {
+	font-family: "Rockwell";
+}
+
+#page {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#Logo {
+	height: 138px;
+	text-align: center;
+	vertical-align: text-top;
+	font-size: 45pt;
+	color: #c1bebb;
+}
+
+#header {
+	background-color: white;
+	width: 930px;
+	margin-top: 138px;
+	margin-left: 48px;
+	margin-right: 49px;
+	height: 56px;
+	box-shadow: 2px 2px 5px #999; 
+}
+#menu {
+	float: left;
+
+}
+
+#menu li	 {
+	color: #c1bebb;
+	display: inline;
+	margin-left: 54px;
+	font-size: 18pt;
+}
+
+#Buscar {
+	float: right;
+	margin-top: 15px;
+	margin-right: 5px;
+	box-shadow: 2px 2px 5px #999;
+}
+
+#banner {
+	background-color: white;
+	margin-top: 15px;
+	margin-left: 46px;
+	margin-right: 49px;
+	box-shadow: 2px 2px 5px #999;
+}
+
+#ciudad {
+	float: center;
+	margin-left: 12px;
+	margin-right: 12px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.mostrar {
+	margin: 13px;
+	margin-top: 15px;
+	margin-left: 33px;
+	/*margin-right: 49px;*/
+    width: 100%;
+}
+
+/*cuatro{
+	margin-top: 15px;
+	margin-left: 46px;
+	margin-right: 49px;
+}
+*/
+
+#articulo {
+	background-color: white;
+	width: 220px;
+	margin-top: 15px;
+	margin-left: 13px;
+	display: inline-block;
+    font-size: 12px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+#photo {
+	/*width: 171px;
+	height: 127px;*/
+	margin-left: 11px;
+	margin-right: 13px;
+	margin-top: 15px;
+}
+
+#lorem {
+	text-indent: 36px;
+	margin-top: 21px;
+	font-size: 12px;
+	margin-left: 12px;
+	margin-right: 12px;
+
+}
+
+#more{
+	text-decoration: underline;
+	text-align: right;
+}
+
+#welcome {
+	width: 930px;
+	height: 188px;
+	background-color: white;
+	margin-top: 15px;
+	margin-left: 46px;
+	margin-right: 49px;
+	box-shadow: 2px 2px 5px #999;
+}
+#fotos {
+	float: left;
+	margin-left: 12px;
+	margin-top: 11px;
+	margin-right: 15px;
+}
+
+#terminos {
+	background-color: white;
+	width: 930px;
+	height: 55px;
+	margin-top: 15px;
+	margin-left: 46px;
+	margin-right: 49px;
+	box-shadow: 2px 2px 5px #999;
+}
+
+#fin {
+	margin-left: 47px;
+	margin-top: 20px;
+}
+#texto li {
+	list-style: none;
+	display: inline;
+	height: 15px;
+	font-size: 14pt;
+	margin-left: 10px;
+}
